@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Onsen UI Memo App 2.0</title>
+  <title>ANDY VERSION - Onsen UI Memo App 2.0</title>
+
+  <!-- ANDY Added next 3 lines so that app goes fullscreen when launched from home screen - simulating an app -->
+  <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+  <meta name="apple-mobile-web-app-title" content="ANDY ONSENUI" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
   <script src="lib/onsen/js/onsenui.js"></script>
 
@@ -71,6 +76,22 @@
     </ons-page>
   </template>
 
+  
+<!--  ANDY ADDED PROMPT TO SAVE TO HOMESCREEN -->
+<script type="text/javascript">
+$(document).ready(function(){
+        // iOS web app full screen hacks.
+        if(window.navigator.standalone == true) {
+                // make all link remain in web app mode.
+                $('a').click(function() {
+                        window.location = $(this).attr('href');
+            return false;
+                });
+        }
+});
+</script>
+
+  
 </body>
 
 </html>
