@@ -77,8 +77,9 @@
   </template>
 
   
-<!--  ANDY ADDED PROMPT TO SAVE TO HOMESCREEN -->
 <script type="text/javascript">
+
+  // ANDY keep links inside - not sure if this is necessary
 $(document).ready(function(){
         // iOS web app full screen hacks.
         if(window.navigator.standalone == true) {
@@ -89,6 +90,19 @@ $(document).ready(function(){
                 });
         }
 });
+  
+// ANDY attempt at preventing scrolling when drag down and up
+function preventDefault(e){
+    e.preventDefault();
+}
+
+function disableScroll(){
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll(){
+    document.body.removeEventListener('touchmove', preventDefault);
+}
+  
 </script>
 
   
