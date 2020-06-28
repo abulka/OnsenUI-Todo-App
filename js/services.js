@@ -277,6 +277,93 @@ myApp.services = {
       description: 'Some description.',
       highlight: false,
       urgent: false
+    },
+    
+    {
+      title: 'A Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+      {
+      title: 'B Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+        {
+      title: 'C Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+      {
+      title: 'D Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+        {
+      title: 'E Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+      {
+      title: 'F Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+        {
+      title: 'G Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: true
+    },
+      {
+      title: 'H Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+    {
+      title: 'II Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+      {
+      title: 'JJ Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: true,
+      urgent: false
+    },
+        {
+      title: 'KK Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
+    },
+      {
+      title: 'LL Enjoy an Onsen with Onsen UI team',
+      category: 'Personal',
+      description: 'Some description.',
+      highlight: false,
+      urgent: false
     }
+
+    
   ]
 };
