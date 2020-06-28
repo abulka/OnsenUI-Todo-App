@@ -6,8 +6,10 @@
 
   <!-- ANDY Added next 3 lines so that app goes fullscreen when launched from home screen - simulating an app -->
   <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
-  <meta name="apple-mobile-web-app-title" content="ANDY ONSENUI" />
   <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- iNoBounce to prevent bouncing see https://github.com/lazd/iNoBounce/blob/master/examples/app.html -->
+  <script src="inobounce.js"></script>
 
   <script src="lib/onsen/js/onsenui.js"></script>
 
@@ -27,10 +29,33 @@
     }
     
     body {
-      margin: 0;
-      overscroll-behavior: none;
+      marginXX: 0;
+      overscroll-behaviorXX: none;
     }
   </style>
+  
+  
+	<script>
+		// Allow toggling of iNoBounce with the toggle button
+		window.addEventListener('load', function() {
+			var enabled = true;
+			var toggle = document.getElementById('iNoBounceToggle');
+			toggle.addEventListener('click', function() {
+				if (enabled) {
+					iNoBounce.disable();
+					toggle.classList.add('default');
+					toggle.innerHTML = 'Enable';
+				}
+				else {
+					iNoBounce.enable();
+					toggle.classList.remove('default');
+					toggle.innerHTML = 'Disable';
+				}
+				enabled = !enabled;
+			}, false);
+		}, false);
+	</script>
+  
   
 </head>
 
@@ -41,6 +66,15 @@
   </ons-navigator>
 
 
+  
+  <!--  hacky debug toggle for iNoBounce  -->
+    <h1>iNoBounce</h1>
+		<div>
+			<button id="iNoBounceToggle" class="button">Disable</button>
+		</div>
+  
+  
+  
   <!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
   <template id="splitter.html">
     <ons-page>
